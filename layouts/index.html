@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{{ partial "head.html" . }}
+
+<body data-spy="scroll" data-target=".navbar" class="has-loading-screen loading-done">
+    <div class="ts-page-wrapper" id="page-top">
+
+        {{ partial "nav.html" .}}
+
+        {{ partial "hero.html" . }}
+
+        <main id="ts-content">
+
+            {{ partial "service.html" . }}
+
+            {{ partial "about.html" . }}
+
+            {{ partial "invite.html" . }}
+
+            {{ partial "skills.html" . }}
+
+            {{ partial "portfolio.html" . }}
+
+            {{ partial "ts-block.html" . }}
+
+            {{ partial "testimonials.html" . }}
+
+            {{ partial "partner.html" . }}
+
+        </main>
+
+        {{ partial "footer.html" . }}
+
+    </div>
+
+    <!-- Modal -->
+    {{ partial "modal.html" . }}
+    <!--end modal-->
+
+    {{ partial "js.html" . }}
+
+</body>
+
+</html>

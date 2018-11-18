@@ -1,0 +1,8 @@
+baseURL = "/"
+languageCode = "zh-cn"
+title = "Currículum Vitae de Cool"
+description = "郑宇华个人简历 郑宇华 个人简历 个性简历"
+author = "Cool"
+favicon = "favicon.ico"
+
+[params]
