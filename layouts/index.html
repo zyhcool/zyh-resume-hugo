@@ -22,9 +22,12 @@
 
             {{ partial "portfolio.html" . }}
 
-            {{ partial "ts-block.html" . }}
+            {{ partial "achievement.html" . }}
 
+
+            {{ if .Site.Params.testimonials.enable }}
             {{ partial "testimonials.html" . }}
+            {{ end }}
 
             {{ partial "partner.html" . }}
 

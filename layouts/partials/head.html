@@ -6,6 +6,10 @@
     <meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.favicon }}
+    <link rel="shortcut icon" type="image/x-icon" href="{{ . | absURL }}">
+    <link rel="icon" type="image/x-icon" href="{{ . | absURL }}">
+    {{ end }}
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">

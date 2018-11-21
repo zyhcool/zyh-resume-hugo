@@ -4,54 +4,28 @@
         data-bg-image-opacity=".1">
         <div class="container">
             <div class="ts-title text-center">
-                <h2 class="ts-bubble-border"><i></i><i></i><i></i><i></i><i></i>Get In Touch</h2>
+                <h2 class="ts-bubble-border"><i></i><i></i><i></i><i></i><i></i>
+                    {{ with .Site.Params.footer.headTitle }}{{ . | markdownify }}{{ end }}
+                </h2>
             </div>
             <div class="row ts-xs-text-center ">
-                <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" style="visibility: hidden;">
-                    <img src="img/icon-pin.png" class="mb-4" alt="">
-                    <h5>Address</h5>
+                {{ range $i,$e := .Site.Params.footer.contactMethods }}
+                <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".{{$i}}s" style="visibility: hidden;">
+                    <img src="img/{{ .img }}" class="mb-4" alt="">
+                    <h5>{{ .method | markdownify }}</h5>
                     <div class="ts-opacity__50">
-                        <figure class="mb-0">999 Carter Street</figure>
-                        <figure>Sailor Springs, IL 62434</figure>
+                        <figure>{{ .value | markdownify }}</figure>
                     </div>
                     <!--end ts-opacity__50-->
                 </div>
-                <!--end col-md-3-->
-                <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".1s" style="animation-delay: 0.1s; visibility: hidden;">
-                    <img src="img/icon-phone-02.png" class="mb-4" alt="">
-                    <h5>Phone</h5>
-                    <div class="ts-opacity__50">
-                        <figure class="mb-0">+1 618-689-9409</figure>
-                        <figure>+1 781-254-8437</figure>
-                    </div>
-                    <!--end ts-opacity__50-->
-                </div>
-                <!--end col-md-3-->
-                <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".2s" style="animation-delay: 0.2s; visibility: hidden;">
-                    <img src="img/icon-envelope.png" class="mb-4" alt="">
-                    <h5>Email</h5>
-                    <div class="ts-opacity__50">
-                        <figure class="mb-0">hello@example.com</figure>
-                        <figure>support@example.com</figure>
-                    </div>
-                    <!--end ts-opacity__50-->
-                </div>
-                <!--end col-md-3-->
-                <div class="col-sm-6 col-md-3 mb-4" data-animate="ts-fadeInUp" data-delay=".3s" style="animation-delay: 0.3s; visibility: hidden;">
-                    <img src="img/icon-talk-bubble.png" class="mb-4" alt="">
-                    <h5>Facebook Chat</h5>
-                    <div class="ts-opacity__50">
-                        <figure>me.freelancer3</figure>
-                    </div>
-                    <!--end ts-opacity__50-->
-                </div>
+                {{ end }}
                 <!--end col-md-3-->
             </div>
             <!--end row-->
 
             <div class="pt-5">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4" style="display: none">
                         <h3>Let’s Connect</h3>
                         <div class="ts-column-count-sm-2">
                             <a href="#" class="mb-3 d-flex text-white ts-align__vertical">

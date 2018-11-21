@@ -1,0 +1,33 @@
+<section class="ts-block" data-bg-image="img/{{ with .Site.Params.achievement.bgimg }}{{ . }}{{ end }}" style="background-image: url('img/{{ with .Site.Params.achievement.bgimg }}{{ . }}{{ end }}');">
+    <div class="container ts-promo-numbers">
+        <div class="row">
+            {{ range .Site.Params.achievement.item }}
+            <div class="col-sm-6 col-md-3">
+                <div class="ts-promo-number text-center">
+                    <figure class="odometer odometer-auto-theme" data-odometer-final="{{ .number }}">
+                        <div class="odometer-inside">
+                            <span class="odometer-digit">
+                                <span class="odometer-digit-spacer">
+                                    {{ .spacer }}
+                                </span>
+                                <span class="odometer-digit-inner">
+                                    <span class="odometer-ribbon">
+                                        <span class="odometer-ribbon-inner">
+                                            <span class="odometer-value">
+                                                {{ .ribbon }}
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </figure>
+                    <h5>{{ .target }}</h5>
+                </div>
+                <!--end ts-promo-number-->
+            </div>
+            {{ end }}
+            <!--end col-md-3-->
+        </div>
+    </div>
+</section>

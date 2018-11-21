@@ -1,3 +1,6 @@
+# 原版网址：
+# http://www.themestarz.net/html/selfer/?storefront=envato-elements#page-top
+
 baseURL = "/"
 languageCode = "zh-cn"
 title = "Currículum Vitae de Cool"
@@ -6,3 +9,251 @@ author = "Cool"
 favicon = "favicon.ico"
 
 [params]
+    logo = "logo.png"
+
+# nav
+[params.nav]
+    [[params.nav.item]]
+        name = "Home"
+        href = "#page-top"
+    [[params.nav.item]]
+        name = "Services"
+        href = "#my-services"
+    [[params.nav.item]]
+        name = "About Me"
+        href = "#about-me"
+    [[params.nav.item]]
+        name = "Skills"
+        href = "#my-skills"
+    [[params.nav.item]]
+        name = "Portfolio"
+        href = "#portfolio"
+    [[params.nav.item]]
+        name = "Clients"
+        href = "#testimonials"
+    [[params.nav.item]]
+        name = "Contact"
+        href = "#form-contact"
+
+# hero
+[params.hero]
+    description = "I'm Cool the handsome."
+    backgroundImg = "bg-hero.jpg"
+
+    [[params.hero.socialIcon]]
+        name = "facebook"
+        href = "#"
+    [[params.hero.socialIcon]]
+        name = "twitter"
+        href = "#"
+    [[params.hero.socialIcon]]
+        name = "pinterest"
+        href = "#"
+    [[params.hero.socialIcon]]
+        name = "slack"
+        href = "#"
+    [[params.hero.socialIcon]]
+        name = "instagram"
+        href = "#"
+
+
+    [[params.hero.title]]
+        name = "Developer"
+    [[params.hero.title]]
+        name = "Handsome Chinese"
+    [[params.hero.title]]
+        name = "DiaoSier"
+
+
+# service
+[params.service]
+    headTitle = "My Services"
+
+    [[params.service.item]]
+        img = "icon-brushes.png"
+        title = "Web Design"
+        description = "Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque"
+    [[params.service.item]]
+        img = "icon-camera.png"
+        title = "Photography"
+        description = "Fusce lorem ex, fringilla eget consequat ut, molestie sit amet nibh. Nullam vitae tincidunt"
+    [[params.service.item]]
+        img = "icon-video.png"
+        title = "Video Editing"
+        description = "Aenean pretium nulla libero, vitae iaculis libero efficitur a. Fusce ut augue finibus quam"
+    [[params.service.item]]
+        img = "icon-pencil.png"
+        title = "Copy Writing"
+        description = "Fusce lorem ex, fringilla eget consequat ut, molestie sit amet nibh. Nullam vitae tincidunt"
+    [[params.service.item]]
+        img = "icon-lcd.png"
+        title = "Coding"
+        description = "Aenean pretium nulla libero, vitae iaculis libero efficitur a. Fusce ut augue finibus quam"
+    [[params.service.item]]
+        img = "icon-phone.png"
+        title = "App Developing"
+        description = "Duis molestie enim mattis gravida viverra. Fusce ut eros augue. Sed id mauris vel neque"
+
+# about
+[params.about]
+    headTitle = "About Me"
+    img = "img-man-looking.jpg"
+    hello = "Hey , 你好"
+    description = "In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentumut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac portasem turpis quis leo. Nulla in feugiat elit."
+    contactText = "Contact Me"
+    downCVText = "Download CV"
+
+    [[params.about.info]]
+        field = "Name:"
+        value = "Jonathan Doe"
+    [[params.about.info]]
+        field = "Phone:"
+        value = "+1 908-736-1801"
+    [[params.about.info]]
+        field = "Email:"
+        value = "hello@example.com"
+    [[params.about.info]]
+        field = "Twitter:"
+        value = "freelancer9"
+
+# invite
+[params.invite]
+    inviteText = "Let’s Work Together On Your Next Project!"
+    hireMe = "Hire Me Now!"
+    img = "bg-keyboard.jpg"
+
+# skills
+[params.skills]
+    headTitle = "My Skills"
+    title = "Every Day is a New Challenge"
+    [[params.skills.description]]
+        text = "In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentumut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac portasem turpis quis leo. Nulla in feugiat elit."
+    [[params.skills.description]]
+        text = "In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentumut vel diam. Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac portasem turpis quis leo. Nulla in feugiat elit."
+
+    [[params.skills.item]]
+        name = "Webdesign"
+        progress = "70%"
+    [[params.skills.item]]
+        name = "Photography"
+        progress = "100%"
+    [[params.skills.item]]
+        name = "Coding"
+        progress = "90%"
+    [[params.skills.item]]
+        name = "Copywriting"
+        progress = "100%"
+
+# portfolio
+[params.portfolio]
+    headTitle = "Portfolio"
+
+    [[params.portfolio.item]]
+        img = "img-work-01.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-02.png"
+        text = "img-work-02.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-03.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-04.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-05.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-06.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-07.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-08.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-09.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-10.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+    [[params.portfolio.item]]
+        img = "img-work-11.png"
+        text = "img-work-01.png"
+        subtext = "img-work-01.png"
+
+# achievement
+[params.achievement]
+    bgimg = "bg-man-sitting.jpg"
+
+    [[params.achievement.item]]
+        number = "23"
+        target = "Client"
+        spacer = "8"
+        ribbon = "0"
+    [[params.achievement.item]]
+        number = "54"
+        target = "Projects"
+        spacer = "8"
+        ribbon = "0"
+    [[params.achievement.item]]
+        number = "12"
+        target = "Awards"
+        spacer = "8"
+        ribbon = "0"
+    [[params.achievement.item]]
+        number = "3"
+        target = "Years Experience"
+        spacer = "8"
+        ribbon = "0"
+
+# testimonials
+[params.testimonials]
+    enable = false
+    headTitle = "Testimonials"
+
+# partners
+[params.partners]
+    [[params.partners.imgs]]
+        img = "logo-01-w.png"
+    [[params.partners.imgs]]
+        img = "logo-02-w.png"
+    [[params.partners.imgs]]
+        img = "logo-03-w.png"
+    [[params.partners.imgs]]
+        img = "logo-04-w.png"
+    [[params.partners.imgs]]
+        img = "logo-05-w.png"
+
+# footer
+[params.footer]
+    headTitle = "Get In Touch"
+
+    [[params.footer.contactMethods]]
+        img = "icon-pin.png"
+        method = "Address"
+        value = "San Francisco"
+    [[params.footer.contactMethods]]
+        img = "icon-phone-02.png"
+        method = "Phone"
+        value = "+1 781-254-8437"
+    [[params.footer.contactMethods]]
+        img = "icon-envelope.png"
+        method = "Email"
+        value = "support@example.com"
+    [[params.footer.contactMethods]]
+        img = "icon-talk-bubble.png"
+        method = "Facebook Chat"
+        value = "me.freelancer3"
+

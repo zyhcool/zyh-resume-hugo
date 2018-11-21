@@ -2,10 +2,14 @@
     <div class="container">
         <div class="text-center px-5 pt-5 position-relative">
             <h3 class="my-3">
-                Let’s Work Together On Your Next Project!
+                {{ with .Site.Params.invite.inviteText }}{{ . | markdownify }}{{ end }}
             </h3>
-            <a href="#contact" class="btn btn-primary mr-2 ts-push-down__50 ts-has-talk-arrow">Hire Me Now!</a>
-            <div class="ts-background ts-opacity__20" data-bg-image="img/bg-keyboard.jpg" style="background-image: url(&quot;img/bg-keyboard.jpg&quot;);"></div>
+            <a href="#contact" class="btn btn-primary mr-2 ts-push-down__50 ts-has-talk-arrow">
+                {{ with .Site.Params.invite.hireMe }}{{ . | markdownify }}{{ end }}
+            </a>
+            {{ with .Site.Params.invite.img }}
+            <div class="ts-background ts-opacity__20" data-bg-image="img/{{ . }}" style="background-image: url('img/{{ . }}');"></div>
+            {{ end }}
         </div>
     </div>
 </section>
